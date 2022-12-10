@@ -1,6 +1,43 @@
+alert("welcome");
+
+let list = [
+  "anaconda",
+  "konfu panda",
+  "flash",
+  "homecoming",
+  "all american",
+  "lord of the rings",
+  "chunli",
+  "megatron",
+  "one piece",
+  "naruto",
+  "god of highschool",
+  "bleech",
+  "jujutsu kaison"
+];
+alert(`here are the available movies at the store ${list}`);
+
 function form() {
-  alert("welcome");
   let rentersChoice = prompt("which movie would you like to rent? ");
+  if (
+    rentersChoice === "anaconda" ||
+    rentersChoice === "konfu panda" ||
+    rentersChoice === "flash" ||
+    rentersChoice === "homecoming" ||
+    rentersChoice === "all american" ||
+    rentersChoice === "lord of the rings" ||
+    rentersChoice === "chunli" ||
+    rentersChoice === "megatron" ||
+    rentersChoice === "one piece" ||
+    rentersChoice === "naruto" ||
+    rentersChoice === "god of highschool" ||
+    rentersChoice === "bleech" ||
+    rentersChoice === "jujutsu kaison"
+  ) {
+  } else {
+    alert("not avialable in store");
+    return form();
+  }
 
   let issuedDate = prompt("Date issued ( day / month/ year)");
 
